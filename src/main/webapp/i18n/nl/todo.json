@@ -1,0 +1,26 @@
+{
+    "goalBuddyApp": {
+        "todo" : {
+            "home": {
+                "title": "Todos",
+                "createLabel": "Maak een nieuwe Todo",
+                "createOrEditLabel": "Maak of wijzig een Todo",
+                "search": "Search for Todo"
+            },
+            "created": "A new Todo is created with identifier {{ param }}",
+            "updated": "A Todo is updated with identifier {{ param }}",
+            "deleted": "A Todo is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Todo {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Todo"
+            },
+            "name": "Name",
+            "description": "Description",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "priority": "Priority"
+        }
+    }
+}

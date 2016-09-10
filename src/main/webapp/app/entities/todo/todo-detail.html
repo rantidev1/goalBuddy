@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span translate="goalBuddyApp.todo.detail.title">Todo</span> {{vm.todo.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="goalBuddyApp.todo.name">Name</span></dt>
+        <dd>
+            <span>{{vm.todo.name}}</span>
+        </dd>
+        <dt><span translate="goalBuddyApp.todo.description">Description</span></dt>
+        <dd>
+            <span>{{vm.todo.description}}</span>
+        </dd>
+        <dt><span translate="goalBuddyApp.todo.startDate">Start Date</span></dt>
+        <dd>
+            <span>{{vm.todo.startDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="goalBuddyApp.todo.endDate">End Date</span></dt>
+        <dd>
+            <span>{{vm.todo.endDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="goalBuddyApp.todo.priority">Priority</span></dt>
+        <dd>
+            <span>{{vm.todo.priority}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="todo-detail.edit({id:vm.todo.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
